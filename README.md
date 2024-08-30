@@ -21,3 +21,4 @@ TODO App with react, 2024 ver
 - Start: 2024-08-30(금)
 
 - [React-icons](https://react-icons.github.io/react-icons/) 아이콘 참고
+- 2024-08-30(금): 1h 39m 작업 - 기본 뼈대 -> Todo list 구성 완료
