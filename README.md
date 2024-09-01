@@ -5,8 +5,8 @@ TODO App with react, 2024 ver
 ## GOAL
 
 1. TODO APP
-2. 전체 아이템 리스트 보여주기
-3. 아이템 삭제
+2. 전체 아이템 리스트 보여주기 ✅
+3. 아이템 삭제 ✅
 4. 아이템 체크박스
 5. 아이템 추가
 6. 아이템 필터링
@@ -21,6 +21,20 @@ TODO App with react, 2024 ver
 - Start: 2024-08-30(금)
 
 - [React-icons](https://react-icons.github.io/react-icons/) 아이콘 참고
-- 2024-08-30(금): 1h 39m 작업 - 기본 뼈대 -> Todo list 구성 완료
-- 2024-08-31(토): 43m 작업 - todo item prop 전달, 아이템 삭제 delete 기능 간단 구현 완료
-- 2024-08-31(토) 현재 total 작업시간: 2h 22m
+
+## Dev Log
+
+- 2024-08-30(금)
+  - 1h 39m 작업
+  - 기본 뼈대 -> Todo list 구성 완료
+- 2024-08-31(토)
+  - 43m 작업
+  - todo item prop 전달, 아이템 삭제 delete 기능 간단 구현 완료
+- 2024-09-01(일)
+  - 34m 작업
+  - Add Todo 기본 기능 구현
+  - Todo list data 및 handling 함수 메인 컴포넌트 AppTodo.jsx 로 이동
+
+---
+
+- ~2024-08-31(토) 현재 total 작업시간: 2h 22m
