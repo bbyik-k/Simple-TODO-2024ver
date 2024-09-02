@@ -2,6 +2,7 @@
 .todo-list {
   /* height: 85%; */
   padding: 10px 0 10px 0;
+  flex: 1;
 }
 
 /* todo item 개별 list 스타일 */

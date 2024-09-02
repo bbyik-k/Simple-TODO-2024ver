@@ -16,5 +16,5 @@ html {
   /* border: 1px #999 solid; */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }

@@ -1,0 +1,11 @@
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.filter-container {
+  flex: 0.65;
+  display: flex;
+  justify-content: space-between;
+}

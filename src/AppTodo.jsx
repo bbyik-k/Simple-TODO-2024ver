@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './styles/AppTodo.css';
 import TodoList from './components/TodoList/TodoList';
 import AddTodo from './components/Footer/AddTodo';
+import Header from './components/Header/Header';
 
 export default function AppTodo_() {
   const [todoList, setTodo] = useState(initialTodo);
@@ -21,6 +22,7 @@ export default function AppTodo_() {
 
   return (
     <div className='todo-app-container'>
+      <Header />
       <TodoList todoList={todoList} handleDelete={handleDelete} />
       <AddTodo onAddTodo={handleAdd} />
     </div>
