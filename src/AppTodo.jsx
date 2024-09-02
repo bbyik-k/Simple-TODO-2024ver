@@ -6,6 +6,9 @@ import Header from './components/Header/Header';
 
 export default function AppTodo_() {
   const [todoList, setTodo] = useState(initialTodo);
+  // const [todoState, setTodoState] = useState('active');
+  const [todoState, setTodoState] = useState('all');
+  // const [todoState, setTodoState] = useState('completed');
 
   const handleDelete = (id) => {
     console.log('delete!');
@@ -20,10 +23,14 @@ export default function AppTodo_() {
     });
   };
 
+  const handleState = (state) => {
+    setTodoState(state);
+  };
+
   return (
     <div className='todo-app-container'>
-      <Header />
-      <TodoList todoList={todoList} handleDelete={handleDelete} />
+      <Header handleState={handleState} />
+      <TodoList todoList={todoList} handleDelete={handleDelete} todoState={todoState} />
       <AddTodo onAddTodo={handleAdd} />
     </div>
   );
