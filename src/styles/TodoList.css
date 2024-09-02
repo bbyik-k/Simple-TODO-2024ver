@@ -1,14 +1,10 @@
-.todo-app-container {
-  width: 500px;
-  height: 400px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  background-color: #fff;
-  border-radius: 8px;
-  /* border: 1px #999 solid; */
+/* todo item 전체 ul 스타일 */
+.todo-list {
+  /* height: 85%; */
+  padding: 10px 0 10px 0;
 }
 
-/* todo item list 전체 스타일 */
+/* todo item 개별 list 스타일 */
 .todo-item {
   display: flex;
   align-items: center;

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../../styles/AddTodo.css';
 
 export default function AddTodo({ onAddTodo }) {
   const [inputValue, setInputValue] = useState('');
@@ -7,11 +8,12 @@ export default function AddTodo({ onAddTodo }) {
     console.log(inputValue);
   };
   const handleAddClick = () => {
+    if (inputValue.trim() === '') return;
     console.log(inputValue);
     onAddTodo(inputValue);
   };
   return (
-    <div>
+    <div className='todo-footer'>
       <input type='text' placeholder='Add Todo' onChange={handleChange} className='todo-input' value={inputValue} />
       <button className='todo-add-button' onClick={handleAddClick}>
         ADD

@@ -5,3 +5,16 @@ html {
   align-items: center;
   justify-content: center;
 }
+
+.todo-app-container {
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+  border-radius: 8px;
+  /* border: 1px #999 solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
