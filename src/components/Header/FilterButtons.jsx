@@ -1,11 +1,14 @@
 import React from 'react';
 import '../../styles/Header.css';
 
-export default function FilterButtons({ handleState }) {
+export default function FilterButtons({ handleState, todoState }) {
+  // const getButtonClass(state)=>{
+  // return todoState ==
+  // }
   return (
     <ul className='filter-container'>
       <li
-        className='filter-button'
+        className={`filter-button ${todoState === 'all' ? 'active' : ''}`}
         onClick={() => {
           handleState('all');
         }}
@@ -13,7 +16,7 @@ export default function FilterButtons({ handleState }) {
         All
       </li>
       <li
-        className='filter-button'
+        className={`filter-button ${todoState === 'active' ? 'active' : ''}`}
         onClick={() => {
           handleState('active');
         }}
@@ -21,7 +24,7 @@ export default function FilterButtons({ handleState }) {
         Active
       </li>
       <li
-        className='filter-button'
+        className={`filter-button ${todoState === 'completed' ? 'active' : ''}`}
         onClick={() => {
           handleState('completed');
         }}

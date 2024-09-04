@@ -29,7 +29,7 @@ export default function AppTodo_() {
 
   return (
     <div className='todo-app-container'>
-      <Header handleState={handleState} />
+      <Header handleState={handleState} todoState={todoState} />
       <TodoList todoList={todoList} handleDelete={handleDelete} todoState={todoState} />
       <AddTodo onAddTodo={handleAdd} />
     </div>
