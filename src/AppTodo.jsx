@@ -3,6 +3,7 @@ import './styles/AppTodo.css';
 import TodoList from './components/TodoList/TodoList';
 import AddTodo from './components/Footer/AddTodo';
 import Header from './components/Header/Header';
+import { ThemeProvider } from './context/ThemeContext';
 
 export default function AppTodo_() {
   const [todoList, setTodo] = useState(initialTodo);
@@ -28,11 +29,13 @@ export default function AppTodo_() {
   };
 
   return (
-    <div className='todo-app-container'>
-      <Header handleState={handleState} todoState={todoState} />
-      <TodoList todoList={todoList} handleDelete={handleDelete} todoState={todoState} />
-      <AddTodo onAddTodo={handleAdd} />
-    </div>
+    <ThemeProvider>
+      <div className='todo-app-container'>
+        <Header handleState={handleState} todoState={todoState} />
+        <TodoList todoList={todoList} handleDelete={handleDelete} todoState={todoState} />
+        <AddTodo onAddTodo={handleAdd} />
+      </div>
+    </ThemeProvider>
   );
 }
 

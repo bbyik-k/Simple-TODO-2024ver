@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
+  user-select: none;
 }
 
 .filter-container {
@@ -17,4 +18,8 @@
 .active {
   font-weight: bold;
   color: #0056b3;
+}
+
+.toggle-button {
+  cursor: pointer;
 }
