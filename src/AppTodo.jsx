@@ -12,8 +12,6 @@ export default function AppTodo_() {
   // const [todoState, setTodoState] = useState('completed');
 
   const handleDelete = (id) => {
-    console.log('delete!');
-    console.log(id);
     setTodo((prev) => {
       return prev.filter((todo) => todo.id !== id);
     });
@@ -28,11 +26,17 @@ export default function AppTodo_() {
     setTodoState(state);
   };
 
+  const handleCheck = (id) => {
+    setTodo((prev) => {
+      return prev.map((todo) => (todo.id === id ? { ...todo, completed: !todo.completed } : todo));
+    });
+  };
+
   return (
     <ThemeProvider>
       <div className='todo-app-container'>
         <Header handleState={handleState} todoState={todoState} />
-        <TodoList todoList={todoList} handleDelete={handleDelete} todoState={todoState} />
+        <TodoList todoList={todoList} handleDelete={handleDelete} todoState={todoState} handleCheck={handleCheck} />
         <AddTodo onAddTodo={handleAdd} />
       </div>
     </ThemeProvider>

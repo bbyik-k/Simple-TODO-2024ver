@@ -1,10 +1,10 @@
 import React from 'react';
 import { BsTrash3 } from 'react-icons/bs';
 
-export default function TodoItem({ id, name, completed, handleDelete }) {
+export default function TodoItem({ id, name, completed, handleDelete, handleCheck }) {
   return (
     <li className='todo-item'>
-      {completed ? <input type='checkbox' className='todo-checkbox' checked /> : <input type='checkbox' className='todo-checkbox' />}
+      <input type='checkbox' className='todo-checkbox' checked={completed} onChange={() => handleCheck(id)} />
 
       <span className='todo-text'>{name}</span>
       <button className='delete-button'>
