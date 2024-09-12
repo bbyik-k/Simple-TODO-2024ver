@@ -18,6 +18,10 @@ TODO App with react, 2024 ver
 12. 아이템 추가 시 중복 체크 질문
 13. 간단 서버 연동
 
+- 아이템 추가 시 공백 제거 기능
+- 아이템 추가 후 input란 초기화
+- uuid 고유 id 생성 library 참고
+
 ## Note
 
 - Start: 2024-08-30(금)
