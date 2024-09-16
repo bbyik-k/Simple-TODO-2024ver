@@ -3,6 +3,7 @@ import TodoItem from './TodoItem';
 import '../../styles/TodoList.css';
 
 export default function TodoList({ todoList, handleDelete, todoState, handleCheck }) {
+  //필터링 함수로 분리! + 단순화 가능
   const filteredTodos = todoList.filter((todo) => {
     if (todoState === 'all') return true;
     if (todoState === 'active') return !todo.completed;

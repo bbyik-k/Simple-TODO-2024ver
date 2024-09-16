@@ -12,6 +12,7 @@ export default function AppTodo_() {
   console.log(initialTodo);
 
   // const [todoState, setTodoState] = useState('active');
+  //filter list 를 array로 지정해두면 안전할 것
   const [todoState, setTodoState] = useState('all');
   // const [todoState, setTodoState] = useState('completed');
 
@@ -22,6 +23,7 @@ export default function AppTodo_() {
     localStorage.setItem('todoList', JSON.stringify(arr));
   };
 
+  // 이중 구조? or 바로 setTodoState 호출
   const handleState = (state) => {
     setTodoState(state);
   };
