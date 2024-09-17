@@ -23,7 +23,7 @@ export default function AppTodo_() {
     localStorage.setItem('todoList', JSON.stringify(arr));
   };
 
-  // 이중 구조? or 바로 setTodoState 호출
+  // 이중 구조? or 바로 setTodoState 호출 -> handle 함수가 주도권이 안정적
   const handleState = (state) => {
     setTodoState(state);
   };

@@ -21,6 +21,9 @@ TODO App with react, 2024 ver
 - 아이템 추가 시 공백 제거 기능
 - 아이템 추가 후 input란 초기화
 - uuid 고유 id 생성 library 참고
+- box shadow css 추가
+- si / cn 단축키
+- after css tag 사용
 
 ## Note
 

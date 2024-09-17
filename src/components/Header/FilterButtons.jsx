@@ -9,6 +9,7 @@ export default function FilterButtons({ handleState, todoState }) {
     <ul className='filter-container'>
       {/* filter array 사용 시 map 통해서 li 생성 가능 */}
       <li
+        // && tag로 좀 더 깔끔히 사용 가능
         className={`filter-button ${todoState === 'all' ? 'active' : ''}`}
         onClick={() => {
           handleState('all');
